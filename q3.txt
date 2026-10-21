@@ -1,0 +1,7 @@
+Q3.1 The best data field to turn into a component for an ECS system is the mTransform since position and scale are useful for
+other objects beside sprites to have. A shared transform component would allow other systems such as collision to access the same
+transformation data
+
+Q3.2 We must draw the furthest sprites first and the closest sprites last. The correct order is imperative, else we may get a different
+colour by stacking in the wrong order since alpha blending is non-commutative.
+
